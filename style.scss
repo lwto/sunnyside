@@ -1,13 +1,25 @@
 @import "variables";
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
 
 *{
     box-sizing: border-box;
     margin:0;
     padding:0;
 }
+body{
+    font-size: 18px;
+}
+
+a, a:link, a:visited{
+    text-decoration: none;
+}
+
+h1,h3{
+    font-family: $Fraunces;
+}
+
 
 .banner{
     height:80vh;
@@ -19,32 +31,37 @@
     flex-direction: column;
 
     .header{
-        height:60px;
+        height:80px;
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding-left:20px;
-        padding-right:20px;
+        padding-left:30px;
+        padding-right:30px;
  
         .menu{
             display:flex;
             align-items: center;
-            font-size: 20px;
-            color: $white;
+            color: white;
             span{
-                margin-right:30px;
-                cursor:pointer;
+                margin-right:30px;  
+                a{
+                    color:$white;
+                }
             }
             .contact{
                 background-color:$white;
-                color:black;
-                padding:8px 20px;
-                border-radius: 15px;
+                padding:10px 20px;
+                border-radius: 25px;
                 cursor: pointer;
                 transition: 0.2s all ease-in-out;
-
+                a{
+                    color:black;
+                }
                 &:hover{
-                    background-color:aqua;
+                    background-color:$blue;
+                    a{
+                        color:white;
+                    }
                 }
             }
         }
@@ -59,15 +76,16 @@
         flex-grow: 1;
         color:$white;
         font-weight: bold;
+        letter-spacing: 5px;
         .arrow{
-            margin-top: 40px;
+            margin-top: 70px;
+            margin-bottom: 150px;
         }
     }
 
 }
 
 .section1{
-    height:350px;
     display:flex;
     
     .left{
@@ -83,9 +101,9 @@
                 margin-bottom: 30px;
             }
             p{
-                color:$textColor2;
+                color:$textColor1;
                 line-height:1.3;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: $Barlow;
                 margin-bottom: 30px;
             }
             .button{
@@ -114,7 +132,15 @@
 }
 
 .section3{
-   @extend .section1;
+   display:flex;
+   div{
+       flex:1;
+       img{
+           width:100%;
+           height:100%;
+           object-fit: cover;
+       }
+   }
 }
 
 .testimonials{
@@ -122,13 +148,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:#fffbfb;
+    background-color:$white;
     padding: 50px;
 
     h1{
-        color:$textColor3;
+        color:$textColor2;
         font-size: 20px;
         margin-bottom: 40px;
+        letter-spacing: 3px;
     }
     
     .clients{
@@ -158,15 +185,16 @@
                 text-align:center;
                 margin-bottom: 30px;
                 line-height:1.3;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: $Barlow;
                 color:$textColor2;
             }
             .details{
                 text-align:center;
                 margin-top: 20px;
-                h4{
-                    color:$textColor4;
+                h5{
+                    color:$textColor3;
                     margin-top: 8px;
+                    font-family: $Barlow;
                 }
             }
         }
@@ -185,26 +213,24 @@
 }
 
 .footer{
-    background-color: #90D4C5;
-    color: $footerText;
+    background-color: $footer;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom:50px;
     padding-top:50px;
 
-    .logo img{
-        color: $footerText;
-    }
     .footer-nav{
         margin-top: 30px;
-        color:$footerNav;
         font-weight: bold;
         span{
             padding: 8px;
             cursor: pointer;
-            &:hover{
+            a{
                 color:$footerText;
+                &:hover{
+                    color:white;
+                }
             }
         }
     }
