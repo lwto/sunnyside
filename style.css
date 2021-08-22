@@ -81,10 +81,11 @@ h1, h3 {
   color: #fefbf8;
   font-weight: bold;
   letter-spacing: 5px;
+  margin-bottom: 50px;
 }
 
 .banner .main .arrow {
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 150px;
 }
 
