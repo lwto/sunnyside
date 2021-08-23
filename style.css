@@ -49,6 +49,15 @@ h1, h3 {
   display: none;
 }
 
+.banner .close {
+  cursor: pointer;
+  display: none;
+}
+
+.banner .close img {
+  width: 20px;
+}
+
 .banner .header {
   height: 80px;
   display: flex;
@@ -326,8 +335,17 @@ h1, h3 {
   .banner .header .menu .contact {
     background-color: #fad400;
   }
+  .banner .header .show-menu {
+    top: 80px;
+  }
   .banner .nav_toggle {
     display: block;
+  }
+  .banner .show-close {
+    display: block;
+  }
+  .banner .hide-toggle {
+    visibility: hidden;
   }
   .section1, .section2 {
     flex-direction: column-reverse;

@@ -46,6 +46,13 @@ h1,h3{
         cursor: pointer;
         display:none;
     }
+    .close{
+        cursor:pointer;
+        display:none;
+        img{
+            width:20px;
+        }
+    }
 
     .header{
         height:80px;
@@ -284,42 +291,55 @@ h1,h3{
 }
 
 @media  screen and (max-width:767.98px) {
-   body{
+    body{
        font-size: 20px;
-   }
+    }
     .banner{
        height:60vh;
        .main{
            font-size: 36px;
        }
-        .header .menu{
-            height:30vh;
-            flex-direction: column; 
-            flex:1;
-            justify-content: center;
-            position:absolute;
-            left:5%;
-            top:-100%;
-            //top:80px;
-            background-color: $white;
-            width:90%;
+        .header{
            
-           .nav_item{
-               text-align: center;
-               margin:0;
-               padding-bottom:30px;
-               a{
-                   color:$textColor1;
-               }
+            .menu{
+                height:30vh;
+                flex-direction: column; 
+                flex:1;
+                justify-content: center;
+                position:absolute;
+                left:5%;
+                top:-100%;
+                //top:80px;
+                background-color: $white;
+                width:90%;
+               .nav_item{
+                   text-align: center;
+                   margin:0;
+                   padding-bottom:30px;
+                   a{
+                       color:$textColor1;
+                   }
+                }
+               .contact{
+                    background-color:$yellow;
+                }
+                
+               
             }
-           .contact{
-                background-color:$yellow;
+            .show-menu{
+                top:80px;
             }
-           
         }
+        
         .nav_toggle{
            display:block;
         }
+       .show-close{
+           display: block;
+       }
+       .hide-toggle{
+        visibility: hidden;
+     }
        
    }
     .section1{
