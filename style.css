@@ -314,7 +314,7 @@ h1, h3 {
     font-size: 36px;
   }
   .banner .header .menu {
-    height: 30vh;
+    padding: 30px;
     flex-direction: column;
     flex: 1;
     justify-content: center;
