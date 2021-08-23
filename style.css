@@ -384,3 +384,51 @@ h1, h3 {
     flex-basis: 50%;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .banner {
+    height: 100vh;
+  }
+  .banner .main {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+  .section1 h1, .section2 h1 {
+    font-size: 30px;
+  }
+  .section1 p, .section2 p {
+    font-size: 18px;
+  }
+  .testimonials {
+    padding: 20px;
+  }
+  .testimonials h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+  }
+  .testimonials .client p {
+    font-size: 18px;
+  }
+  .testimonials .client h3 {
+    font-size: 20px;
+  }
+  .footer {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 318px) {
+  body {
+    font-size: 16px;
+  }
+  .banner .main {
+    font-size: 20px;
+  }
+  .section1 h1, .section2 h1 {
+    font-size: 26px;
+  }
+  .testimonials h1 {
+    font-size: 16px;
+  }
+}
