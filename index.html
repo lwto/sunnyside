@@ -17,19 +17,21 @@
         <div class="banner">
             <div class="header">
                 <img src="images/logo.svg" alt="" class="logo">
-                <div class="menu">
-                    <span><a href="#about">About</a></span>
-                    <span><a href="#services">Services</a></span>
-                    <span><a href="#projects">Projects</a></span>
-                    <div class="contact">
-                        <a href="#contact">CONTACT</a>
-                    </div>
+                <div class="menu" id="nav-menu">
+                    <div class="nav_item"><a href="#about">About</a></div>
+                    <div class="nav_item"><a href="#services">Services</a></div>
+                    <div class="nav_item"><a href="#projects">Projects</a></div>
+                    <div class="contact"><a href="#contact">Contact</a></div>
+                </div>
+                <div class="nav_toggle" id="navtoggle">
+                    <img src="images/icon-hamburger.svg" alt="">
                 </div>
             </div>
             <div class="main">
                 <span class="text">WE ARE CREATIVES</span>
                 <img class="arrow" src="images/icon-arrow-down.svg" alt="">
             </div>
+
         </div>
 
         <div class="section1" id="about">
@@ -73,11 +75,23 @@
 
     <div class="section3" id="services">
         <div class="left">
-            <img src="https://i.ibb.co/ssvvmSd/cherries.png" alt="">
+            <div class="text-container">
+                <h1>Graphic Design</h1>
+                <p>
+                    Great design makes you memorable. We deliver artwork that underscores your brand message and
+                    captures
+                    potential clients’ attention.
+                </p>
+            </div>
         </div>
         <div class="right">
-
-            <img src=images/photography.png alt="">
+            <div class="text-container">
+                <h1>Photography</h1>
+                <p>
+                    Increase your credibility by getting the most stunning, high-quality photos that improve your
+                    business image.
+                </p>
+            </div>
 
         </div>
     </div>
@@ -133,10 +147,10 @@
     </div>
 
     <div class="gallery" id="projects">
-        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="">
-        <img src="images/desktop/image-gallery-orange.jpg" alt="">
-        <img src="images/desktop/image-gallery-cone.jpg" alt="">
-        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+        <div><img src="images/desktop/image-gallery-milkbottles.jpg" alt=""></div>
+        <div><img src="images/desktop/image-gallery-orange.jpg" alt=""></div>
+        <div><img src="images/desktop/image-gallery-cone.jpg" alt=""></div>
+        <div><img src="images/desktop/image-gallery-sugarcubes.jpg" alt=""></div>
     </div>
 
     <div class="footer" id="contact">
